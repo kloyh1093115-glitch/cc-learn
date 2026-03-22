@@ -58,10 +58,9 @@ trigger: /learn
 
 ### Step 2: オンボーディング
 
-`AskUserQuestion` で教科書ファイルのパスを確認する。
-
 > 学習室へようこそ。教授が解説を担当します。
-> 数学の教科書（線形代数・解析学・統計幾何学）のファイルパスを教えてください。
+> 数学の基盤（線形代数・解析学・統計幾何学）の教科書はプラグインに含まれています。
+> 何でも聞いてください。
 
 ### Step 3: 学習室を自動作成
 
@@ -259,7 +258,7 @@ trigger: /learn
 ## 数学の基盤（章レベルの目次）
 
 以下は3冊の教科書の章構成。各セクションの詳細な本質・数式・接続は references/ にある。
-教授は解説や資料作成のときに該当する references/ ファイルを Read して参照する。
+教科書本体は textbooks/ にある。教授は解説時に references/ で行番号を確認し、textbooks/ の該当箇所を Read する。
 
 ### 線形代数（詳細: references/linear-algebra.md）
 1. ベクトル空間 — 構造の棲む場所
@@ -317,6 +316,7 @@ trigger: /learn
 - 線形代数の基盤インデックス: `references/linear-algebra.md`
 - 解析学の基盤インデックス: `references/analysis.md`
 - 統計幾何学の基盤インデックス: `references/statistics.md`
+- 教科書本体: `textbooks/線形代数.md`, `textbooks/解析学教科書.md`, `textbooks/統計幾何学.md`
 
 ---
 
@@ -326,5 +326,5 @@ trigger: /learn
 - 解説の目標は「知っていたことが繋がる」体験を作ること
 - 前提が足りなければ先にそちらを解決する。省略しない
 - knowledge/index.md は資料作成のたびに更新する
-- 教科書の詳細が必要なときは CLAUDE.md のパスから該当セクションを Read する
+- 教科書の詳細が必要なときは references/ で行番号を確認し textbooks/ の該当箇所を Read する
 - 基盤知識の詳細が必要なときは references/ の該当ファイルを Read する

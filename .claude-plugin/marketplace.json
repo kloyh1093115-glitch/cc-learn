@@ -1,0 +1,24 @@
+{
+  "name": "cc-learn",
+  "owner": {
+    "name": "kloyh1093115-glitch"
+  },
+  "metadata": {
+    "description": "教科書ベースの学習支援。数学の基盤に紐づけた本質的な解説で学習を加速する。"
+  },
+  "plugins": [
+    {
+      "name": "learn",
+      "source": "./plugins/learn",
+      "description": "教科書ベースの学習支援。数学の基盤に紐づけた本質的な解説と、応用知識の資料を積み上げる。",
+      "version": "1.0.0",
+      "author": {
+        "name": "kloyh1093115-glitch"
+      },
+      "repository": "https://github.com/kloyh1093115-glitch/cc-learn",
+      "license": "MIT",
+      "category": "education",
+      "tags": ["learn", "math", "education", "textbook"]
+    }
+  ]
+}

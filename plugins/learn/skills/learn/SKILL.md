@@ -63,8 +63,7 @@ trigger: /learn
 
 1. `.learn/CLAUDE.md` を読む（キャラクター設定）
 2. `.learn/knowledge/` 内の各教科書の index.md を読む（学習済み知識の全体像）
-
-基盤知識の詳細は references/ にある。解説時に該当する references/ ファイルを Read する。
+3. `references/linear-algebra.md`, `references/analysis.md`, `references/statistics.md` を読む（基盤の依存関係を常にコンテキストに持つ）
 
 ---
 
@@ -81,8 +80,8 @@ trigger: /learn
 
 ```
 1. トピックが属する分野を特定する
-2. その分野が基盤（SKILL.md の目次）か既存の教科書（knowledge/）にあるか確認する
-3. references/ を Read して依存関係を把握する
+2. その分野が基盤か既存の教科書（knowledge/）にあるか確認する
+3. コンテキストにある references/ から依存関係を把握する
 4. ある → 「教えて」モードで解説
    ない → 正確な依存関係に基づいて教科書の作成を提案
    （たとえ基盤の知識で解説できたとしても、トピックの所属先がなければ教科書を提案する）
@@ -98,7 +97,7 @@ trigger: /learn
 ```
 対応:
   1. 分野を特定し、基盤との接続を示す
-  2. references/ で依存関係と本質を確認
+  2. コンテキストにある references/ から依存関係と本質を確認
   3. 前提の本質を復習してから本題に入る
 ```
 

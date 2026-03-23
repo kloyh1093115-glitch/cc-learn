@@ -246,7 +246,7 @@ trigger: /learn
 良い例：f(tx + (1-t)y) ≤ t·f(x) + (1-t)·f(y)
 ```
 
-教科書の章（knowledge/ に保存するファイル）は LaTeX で書いてよい（別ツールで閲覧するため）。
+教科書の章（knowledge/ の .md ファイル）は Markdown 内に LaTeX 数式（`$...$` や `$$...$$`）を使ってよい（Obsidian 等で閲覧するため）。
 
 ### やってはいけないこと
 
